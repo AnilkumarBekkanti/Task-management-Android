@@ -45,53 +45,78 @@
 
 
             <EditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_margin="12dp"
-                android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/baseline_email_24"
-                android:hint="@string/email"
-                android:textColorHint="@color/black"
-                android:padding="8dp"
-                android:textColor="@color/black"
-
-                android:textColorHighlight="@color/cardview_dark_background" />
-
-            <EditText
-                android:id="@+id/password"
+                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="12dp"
                 android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/baseline_account_circle_24"
-                android:hint="@string/password"
+                android:hint="Username"
                 android:textColorHint="@color/black"
-                android:inputType="textPassword"
                 android:padding="8dp"
                 android:textColor="@color/black"
+
                 android:textColorHighlight="@color/cardview_dark_background" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black"
+                app:endIconMode="password_toggle"
+                app:endIconDrawable="@drawable/baseline_visibility_24"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableStart="@drawable/lock1"
+                    android:drawablePadding="8dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:textColorHint="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/loginButton"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_margin="3dp"
-                android:background="@drawable/button_background"
+                android:layout_height="wrap_content"
                 android:text="@string/login1"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:background="@drawable/button_background"
+                android:layout_marginTop="16dp"/>
 
-            <TextView
-                android:id="@+id/textViewSignUp"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/don_t_have_an_account_sign_up1"
-                android:textColor="@color/black"
-                android:textAlignment="center"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp">
 
-                android:padding="10dp"
-                android:layout_margin="6dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dont_have_account"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/signUpPrompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="4dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
 
 
 

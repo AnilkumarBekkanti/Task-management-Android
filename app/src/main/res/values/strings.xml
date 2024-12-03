@@ -1,13 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Login Screen</string>
-    <string name="login">Login</string>
-    <string name="signup">Sign Up</string>
-    <string name="don_t_have_an_account_sign_up">Don\'t have an account?Sign Up</string>
-    <string name="already_have_an_account_login">Already have an account?Login</string>
-    <string name="sign_up">Sign Up</string>
-    <string name="login_in">login</string>
-    <string name="email">Email</string>
+    <string name="app_name">LoginScreen</string>
+
+    <!-- Authentication strings -->
     <string name="login1">Login</string>
-    <string name="don_t_have_an_account_sign_up1">Don\'t have an account?Sign Up</string>
-    <string name="password">password</string>
+    <string name="login_in">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="signup">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="please_login">Please login to continue</string>
+    <string name="remember_me">Remember me</string>
+    <string name="don_t_have_an_account_sign_up1">Don\'t have an account? Sign Up</string>
+
+    <!-- Sign Up specific strings -->
+    <string name="create_account">Create Account</string>
+    <string name="please_register">Please fill in the form to register</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="terms_and_conditions">I agree to the Terms and Conditions</string>
+    <string name="register">Register</string>
+    <string name="already_registered">Already registered? Login</string>
+
+    <!-- Dashboard strings -->
+    <string name="welcome_to_task_management_system">Welcome to Task Management System</string>
+    <string name="total_tasks">Total Tasks: %d</string>
+    <string name="yet_to_start_count">Yet to Start\n%d</string>
+    <string name="completed_count">Completed\n%d</string>
+    <string name="on_hold_count">On Hold\n%d</string>
+    <string name="in_progress_count">In Progress\n%d</string>
+    <string name="no_tasks_available">No tasks available</string>
+    <string name="your_tasks">Your Tasks</string>
+    <string name="create_task">Create Task</string>
+
+    <!-- Counter strings -->
+    <string name="total_tasks_0">Total Tasks: 0</string>
+    <string name="completed_n0">Completed\n0</string>
+    <string name="on_hold_n0">On Hold\n0</string>
+    <string name="in_progress_n0">In Progress\n0</string>
+
+    <!-- Validation messages -->
+    <string name="error_empty_field">This field cannot be empty</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_password_length">Password must be at least 6 characters</string>
+    <string name="error_invalid_mobile">Please enter a valid mobile number</string>
 </resources>

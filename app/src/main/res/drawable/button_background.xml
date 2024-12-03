@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/bgcolor"/> <!-- Button background color -->
-    <corners android:radius="50dp"/> <!-- Adjust this to get the capsule shape -->
+    <solid android:color="@color/purple_500"/> <!-- Changed from bgcolor to purple_500 -->
+    <corners android:radius="8dp"/>
+    <padding
+        android:left="16dp"
+        android:right="16dp"
+        android:top="8dp"
+        android:bottom="8dp"/>
 </shape>
